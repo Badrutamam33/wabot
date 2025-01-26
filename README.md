@@ -1,12 +1,8 @@
-# WhatsApp Automation Bot
-```
- __    __  ___       __       __          ___      ___       __    __  _______ 
-|  |  |  |/  /      |  |     |  |        /   \    /   \     |  |  |  ||   __  |
-|  |/\|  |  /       |  |     |  |       /  ^  \  /  ^  \    |  |__|  ||  |  | |
-|   /\   |  \       |  |     |  |      /  /_\  \/  /_\  \   |   __   ||  |  | |
-|__/  \__|   \      |  `----.|  `----./  /    \__/    \  \  |  |  |  ||  `--' |
-|__|   |__|    \     |_______||_______/__/          \__\    |__|  |__||_______| 
-```
+# WhatsApp Automation Bot with WebSocket (Baileys)
+
+---
+
+|  |  |  |/  /      |  |     |  |        /   \    /   \     |  |  |  ||   __  | |  |/|  |  /       |  |     |  |       /  ^  \  /  ^  \    |  ||  ||  |  | | |   /\   |  \       |  |     |  |      /  /\  /  /\  \   |   __   ||  |  | | |/  _|   \      |  ----.|  ----./  /    _/    \  \  |  |  |  ||  `--' | ||   ||    \     |||//          __\    ||  |__||_______|
 
 ## Status Proyek
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
@@ -14,18 +10,20 @@
 ![Status](https://img.shields.io/badge/status-aktif-success)
 
 ## 🔍 Deskripsi
-Bot WhatsApp canggih untuk otomatisasi pesan dengan fitur logging komprehensif dan manajemen panggilan.
+Bot WhatsApp otomatis menggunakan library **Baileys** yang memungkinkan Anda untuk mengirim pesan otomatis dan mengelola panggilan masuk dengan WebSocket untuk komunikasi real-time. Fitur ini sangat cocok untuk bot yang memerlukan komunikasi langsung dan pemantauan pesan secara langsung.
 
 ## ✨ Fitur Utama
-- Pengiriman Pesan Otomatis
-- Manajemen Panggilan Masuk
-- Logging Detail
-- Konfigurasi Fleksibel
+- **Pengiriman Pesan Otomatis**: Kirim pesan ke nomor WhatsApp secara otomatis.
+- **Manajemen Panggilan Masuk**: Menangani dan menolak panggilan masuk.
+- **WebSocket untuk Real-Time**: Menggunakan WebSocket dari **Baileys** untuk komunikasi real-time antara server dan klien.
+- **Logging Detail**: Setiap aktivitas dicatat untuk referensi debugging.
+- **Konfigurasi Fleksibel**: Sesuaikan pengaturan dan logika pengiriman pesan.
 
 ## 🛠 Prasyarat
-- Termux
-- Node.js 14+
-- Akun WhatsApp
+- **Termux** (untuk Android)
+- **Node.js 14+**
+- **Akun WhatsApp**
+- **npm**
 
 ## 🚀 Instalasi Cepat
 
@@ -33,53 +31,65 @@ Bot WhatsApp canggih untuk otomatisasi pesan dengan fitur logging komprehensif d
 ```bash
 pkg update && pkg upgrade -y
 pkg install nodejs git -y
+
+Instalasi Bot
+
+git clone https://github.com/[username]/wabot.git
+cd wabot
+npm start
 ```
 
-### Instalasi Bot
-```bash
-git clone [URL_REPOSITORY]
-cd [NAMA_FOLDER]
-npm install
-```
+💬 Cara Penggunaan
 
-## 💬 Cara Penggunaan
-```
+Untuk mengirim pesan melalui bot, format input di terminal adalah:
+
 target: [nomor] pesan: [teks] jumlah: [total]
-```
 
-### Contoh
-```
+Contoh
+
 target: 628123456789 pesan: Halo Bot! jumlah: 3
-```
 
-## ⚙️ Konfigurasi
-- Edit `config.js`
-- Sesuaikan parameter bot
-- Atur batas pengiriman
+⚙️ Konfigurasi
 
-## 🛡️ Keamanan
-- Otentikasi Multi-File
-- Perlindungan Panggilan
-- Logging Keamanan
+Edit config.js untuk menyesuaikan parameter bot.
 
-## 🤝 Kontribusi Pribadi
+Atur batas pengiriman pesan dan konfigurasi lainnya di dalam file ini.
 
- - Proyek ini dikembangkan secara mandiri sebagai - - - bagian dari eksplorasi pribadi di bidang:
-   Pemrograman Node.js
 
- - Otomatisasi pesan di platform WhatsApp
- - Pengelolaan log dan keamanan aplikasi
+🛡️ Keamanan
 
- - Jika Anda ingin menambahkan fitur atau mempelajari   cara kerja bot, silakan coba fork dan buat          pengembangan versi Anda sendiri.
+Otentikasi Multi-File: Menggunakan otentikasi multi-file untuk mengelola kredensial dengan lebih aman.
 
-- Langkah Kontribusi:
-   1. Fork repository ini.
-   2. Tambahkan fitur yang Anda inginkan atau buat perbaikan.
-   3. Gunakan file README ini untuk membagikan hasil kontribusi Anda.
+Perlindungan Panggilan: Menangani panggilan masuk untuk menghindari gangguan.
 
-## 📜 Lisensi
-- MIT License - Lihat `LICENSE`
+Logging Keamanan: Setiap aktivitas dicatat dengan aman, termasuk pesan masuk dan keluar.
 
-## ⚠️ Peringatan
-🚨 Gunakan dengan bijak sesuai kebijakan WhatsApp
-```
+
+🤝 Kontribusi
+
+1. Fork Repository ini.
+
+
+2. Buat cabang fitur baru (git checkout -b fitur-xyz).
+
+
+3. Lakukan perubahan yang diperlukan dan commit (git commit -am 'Menambahkan fitur xyz').
+
+
+4. Push ke cabang baru (git push origin fitur-xyz).
+
+
+5. Buat Pull Request untuk menggabungkan fitur.
+
+
+
+📜 Lisensi
+
+MIT License - Lihat LICENSE untuk informasi lebih lanjut.
+
+⚠️ Peringatan
+
+🚨 Gunakan dengan bijak sesuai kebijakan WhatsApp. Bot ini hanya untuk keperluan otomatisasi yang sah dan tidak boleh disalahgunakan untuk spam.
+
+
+
