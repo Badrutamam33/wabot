@@ -39,7 +39,7 @@ pkg install nodejs git -y
 
 Instalasi Bot
 
-git clone https://github.com/[username]/wabot.git
+git clone https://github.com/Badrutamam33/wabot/commits?author=Badrutamam33
 cd wabot
 npm start
 ```
