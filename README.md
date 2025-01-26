@@ -38,6 +38,7 @@ pkg update && pkg upgrade -y
 pkg install nodejs git -y
 
 Instalasi Bot
+npm install @whiskeysockets/baileys
 
 git clone https://github.com/Badrutamam33/wabot.git
 cd wabot
