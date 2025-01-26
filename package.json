@@ -1,0 +1,21 @@
+{
+  "name": "wabot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": " node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@whiskeysockets/baileys": "^6.7.9",
+    "axios": "^1.7.9",
+    "code": "^5.2.4",
+    "qrcode-terminal": "^0.12.0",
+    "terminal": "^0.1.4",
+    "ytdl-core": "^4.11.5"
+  }
+}
