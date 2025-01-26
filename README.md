@@ -4,6 +4,8 @@
 
 |  |  |  |/  /      |  |     |  |        /   \    /   \     |  |  |  ||   __  | |  |/|  |  /       |  |     |  |       /  ^  \  /  ^  \    |  ||  ||  |  | | |   /\   |  \       |  |     |  |      /  /\  /  /\  \   |   __   ||  |  | | |/  _|   \      |  ----.|  ----./  /    _/    \  \  |  |  |  ||  `--' | ||   ||    \     |||//          __\    ||  |__||_______|
 
+---
+
 ## Status Proyek
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![Versi](https://img.shields.io/badge/versi-1.0.0-blue)
