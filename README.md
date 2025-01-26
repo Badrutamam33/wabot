@@ -41,7 +41,8 @@ Instalasi Bot
 
 git clone https://github.com/Badrutamam33/wabot.git
 cd wabot
-npm start
+npm install
+node index.js / npm start
 ```
 
 💬 Cara Penggunaan
