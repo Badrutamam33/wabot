@@ -72,21 +72,7 @@ Perlindungan Panggilan: Menangani panggilan masuk untuk menghindari gangguan.
 Logging Keamanan: Setiap aktivitas dicatat dengan aman, termasuk pesan masuk dan keluar.
 
 
-🤝 Kontribusi
-
-1. Fork Repository ini.
-
-
-2. Buat cabang fitur baru (git checkout -b fitur-xyz).
-
-
-3. Lakukan perubahan yang diperlukan dan commit (git commit -am 'Menambahkan fitur xyz').
-
-
-4. Push ke cabang baru (git push origin fitur-xyz).
-
-
-5. Buat Pull Request untuk menggabungkan fitur.
+#Newbie 
 
 
 
