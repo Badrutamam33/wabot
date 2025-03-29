@@ -59,7 +59,7 @@ target: 628123456789 pesan: Halo Bot! jumlah: 3
 
 ⚙️ Konfigurasi
 
-Edit config.js untuk menyesuaikan parameter bot.
+Edit index.js untuk menyesuaikan parameter bot.
 
 Atur batas pengiriman pesan dan konfigurasi lainnya di dalam file ini.
 
