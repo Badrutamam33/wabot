@@ -39,6 +39,7 @@ pkg install nodejs git -y
 
 Instalasi Bot
 npm install @whiskeysockets/baileys
+npm install qrcode-terminal
 
 git clone https://github.com/Badrutamam33/wabot.git
 cd wabot
